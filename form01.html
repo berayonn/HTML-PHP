@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>SILAHKAN ISI FORM BERIKUT</h2>
+    <form action="terima.php">
+        <table border="1">
+            <tr><td>Nama</td><td><input type="text" name="nama"><br></td></tr>
+            <tr><td>Prodi</td><td>
+                <select name="prodi">
+                    <option value="Filsafat Keilahian">Teologi</option>
+                    <option value="Informatika">Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Kedokteran">Kedokteran</option>
+                </select>
+            </td></tr>
+            <tr><td>Gender</td><td>
+                <input type="radio" name="gender" value="Laki-Laki"> Pria
+                <input type="radio" name="gender" value="Perempuan"> Wanita
+            </td></tr>
+            <tr><td>Bahasa</td><td>
+                <input type="checkbox" name="bhs[]" value="Indonesia">Indonesia <br>
+                <input type="checkbox" name="bhs[]" value="Inggris">Inggris <br>
+                <input type="checkbox" name="bhs[]" value="Jepang">Jepang <br>
+                <input type="checkbox" name="bhs[]" value="Mandarin">Mandarin <br>
+                <input type="checkbox" name="bhs[]" value="Jawa">Jawa <br>
+            </td></tr>
+            <tr><td colspan="2" align="center"><input type="submit" value="Kirim" name="Tombol"></td></tr>
+        </table>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>72210477</title>
+    <style>
+        h1 {
+          background-image: url('back.jpg');
+          background-size: cover;
+          padding: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Formulir Lamaran Pekerjaan</h1>
+    <h2 align="center">Silahkan Isi Formulir Berikut</h2>
+    <form action="submit.php">
+        <table align="center" border="10" style="width:80%">
+            <tr><td align ="center">Nama Lengkap</td><td><input type="text" name="nama"><br></td></tr>
+            <tr><td align ="center">Tanggal Lahir</td><td><input type="date" name="tanggal"><br></td></tr>
+            <tr><td align ="center">Alamat Asal</td><td><input type="text" name="alamat"><br></td></tr>
+            <tr><td align ="center">Nomor Telepon</td><td><input type="tel" name="tlp"><br></td></tr>
+            <tr><td align ="center">NIK</td><td><input type="password" name="pass"><br></td></tr>
+            <tr><td align="center">Asal Program Studi</td><td>
+                <select name="prodi">
+                    <option value="Filsafat Keilahian">Teologi</option>
+                    <option value="Informatika">Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Kedokteran">Kedokteran</option>
+                </select>
+            </td></tr>
+
+            <tr><td align="center">Gender</td><td>
+                <input type="radio" name="gender" value="Laki-Laki"> Pria
+                <input type="radio" name="gender" value="Perempuan"> Wanita
+            </td></tr>
+
+            <tr><td align="center">Bahasa yang Dikuasai</td><td>
+                <input type="checkbox" name="bhs[]" value="Indonesia">Indonesia <br>
+                <input type="checkbox" name="bhs[]" value="Inggris">Inggris <br>
+                <input type="checkbox" name="bhs[]" value="Jepang">Jepang <br>
+                <input type="checkbox" name="bhs[]" value="Mandarin">Mandarin <br>
+                <input type="checkbox" name="bhs[]" value="Jawa">Jawa <br>
+            </td></tr>
+
+            <tr><td align="center">Bahasa Pemrograman yang Dikuasai</td><td>
+                <input type="checkbox" name="skl[]" value="Java">Java <br>
+                <input type="checkbox" name="skl[]" value="Python">Python <br>
+                <input type="checkbox" name="skl[]" value="PHP">PHP <br>
+                <input type="checkbox" name="skl[]" value="HTML">HTML <br>
+                <input type="checkbox" name="skl[]" value="Query">Query <br>
+            </td></tr>
+
+            <tr><td align="center"><label for="vol">IPK</label><td><input type="range" id="ipk" name="ipk" min="0" max="4"></td></tr>
+            <tr><td align="center">Warna Favorit<td><input type="color" name="warna"></td></tr>
+            <tr><td align="center">Upload Foto Diri<td><input type="file" name="foto"></td></tr>
+            <tr><td align="center">Gaji yang Diinginkan<td><input type="number" name="gaji" min="0" max="10000000"></td></tr>
+
+            <tr><td align="center">Harapan Anda</td><td>
+            <textarea rows="5" cols="60" input type="textarea" name="txt">
+            ...Tuliskan Teks Anda Disini...
+            </textarea></td></tr>
+
+            <tr><td colspan="2" align="right"><input type="submit" value="Kirim" name="Tombol" onclick="msg()"></td></tr>
+            <tr><td colspan="2" align="right"><input type="reset" value="Reset" name="reset"></td></tr>
+        </table>
+
+        <p align="center" style="color:red;">If you click the "Submit" button, the form-data will be sent to a page called "/submit.php".</p>
+        <marquee><a align="center" href="https://eclass.ukdw.ac.id">Visit Eclass.ukdw.ac.id!</a></marquee>
+    </form>
+    
+    <script>
+        function msg() {
+          alert("Silahkan Pastikan Anda Sudah Mengisi Data Dengan Benar");
+        }
+    </script>
+
+</body>
+</html>
